@@ -1,40 +1,42 @@
 <ons-page id="statusPage">
 
-  <div style="text-align: center; margin-top: 30px;">
-    <p>
-      MDSIpRest: <b>http://localhost:8081</b>
-      <!-- <ons-input id="serverIpMdsIpRest" modifier="underbar" placeholder="ip:port" float disabled></ons-input> -->
-    </p>
+  <div style="text-align: center; margin-top: 0px;">
+    <!-- <p style="margin-top: 30px;">   -->
+      <ons-input id="MDSIpRestInput" modifier="underbar" placeholder="portal.igi.cnr.it/mdsipRest" float></ons-input>
+      <ons-button onclick="connectToMdsipRestButtonClicked()" modifier="large" ripple>CONNECT to MDS REST service</ons-button>
+    <!-- </p> -->
+  </div>
+
 <!--
     <p style="margin-top: 30px;">
       <ons-button onclick="connectToMdsIpRest()">CONNECT</ons-button>
     </p>
 -->
-  </div>
+
 
 <hr>
 
   <div style="text-align: center; margin-top: 0px;">
     <!-- <p style="margin-top: 30px;">   -->
-      MDSplus: <ons-input id="serverIpMdsplus" modifier="underbar" placeholder="ip:port" float></ons-input>
-      <ons-button onclick="connectToMdsplus()" ripple>CONNECT</ons-button>
+      <ons-input id="serverIpMdsplusInput" modifier="underbar" placeholder="roserver.igi.cnr.it:8000" float></ons-input>
+      <ons-button onclick="connectToMdsplusButtonClicked()" modifier="large" ripple>CONNECT to MDSplus</ons-button>
     <!-- </p> -->
   </div>
 
 <hr>
 
-  <div style="text-align: center; margin-top: 30px;">
-      TreeName: <ons-input id="treeName" modifier="underbar" placeholder="name" float></ons-input>
+  <div style="text-align: center; margin-top: 0px;">
+      <ons-input id="treeNameInput" modifier="underbar" placeholder="test" float></ons-input>
       <!-- <p style="margin-top: 30px;"> -->
-      <ons-button onclick="openTree()" ripple>OPEN</ons-button>
+      <ons-button onclick="openTreeButtonClicked()" modifier="large" ripple>OPEN TREE</ons-button>
       <!-- </p> -->
   </div>
 
 <hr>
 
-  <div style="text-align: center; margin-top: 30px;">
+  <div style="text-align: center; margin-top: 0px;">
     <!-- <p style="margin-top: 30px;"> -->
-      <ons-button onclick="getData()" ripple>Get Data</ons-button>
+      <ons-button onclick="getDataButtonClicked()" modifier="large" ripple>Get Data</ons-button>
     <!-- </p> -->
   </div>
 
